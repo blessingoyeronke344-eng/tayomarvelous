@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tayo Marvellous | Specialist Book Marketing Expert</title>
+<meta name="description" content="Tayo Marvellous is a specialist book marketing expert helping authors reach bestseller status through documented email first campaigns, ARC distribution, Amazon ads and metadata optimization.">
+<meta name="keywords" content="book marketing, book marketing specialist, ARC reviews, Amazon ads for authors, book launch strategy, author marketing services">
+<meta name="author" content="Tayo Marvellous">
+<meta property="og:title" content="Tayo Marvellous | Specialist Book Marketing Expert">
+<meta property="og:description" content="Documented book marketing campaigns with complete written accountability. Amazon ads, ARC teams and bestseller launch strategy.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Tayo Marvellous Book Marketing",
+  "description": "Specialist book marketing services for authors including ARC review campaigns, Amazon advertising, metadata optimization and full bestseller launch management.",
+  "email": "tayomarvellous18@gmail.com",
+  "founder": { "@type": "Person", "name": "Tayo Marvellous", "jobTitle": "Book Marketing Specialist" },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<style>
+/* ============================================================
+   1. PRELOADER
+============================================================ */
+#preloader{position:fixed;inset:0;background:radial-gradient(circle at 50% 50%,#14102a 0%,#0a0a0a 70%);display:flex;align-items:center;justify-content:center;z-index:999999;transition:opacity .9s ease,visibility .9s ease}
+#preloader.hidden{opacity:0;visibility:hidden}
+.preloader-content{text-align:center}
+.preloader-ring{width:90px;height:90px;margin:0 auto 28px;border:2px solid rgba(201,168,76,.12);border-top-color:#c9a84c;border-right-color:#f4d683;border-radius:50%;animation:spinRing 1s linear infinite;position:relative}
+.preloader-ring::after{content:'TM';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:1.4rem;color:#c9a84c;animation:spinRingRev 1s linear infinite}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+@keyframes spinRingRev{to{transform:rotate(-360deg)}}
+.preloader-logo{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:800;letter-spacing:3px;background:linear-gradient(135deg,#c9a84c,#f4d683,#c9a84c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.preloader-sub{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:26px}
+.preloader-bar-container{width:220px;height:2px;background:rgba(201,168,76,.15);margin:0 auto;overflow:hidden;border-radius:2px}
+.preloader-bar{width:0;height:100%;background:linear-gradient(90deg,#a8882e,#f4d683);animation:pfill 2s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes pfill{to{width:100%}}
+
+/* ============================================================
+   2. VARIABLES AND RESET
+============================================================ */
+:root{
+--gold:#c9a84c;--gold-light:#f4d683;--gold-dark:#a8882e;
+--ink:#0a0a0a;--ink-2:#0f0f12;--ink-3:#141418;
+--plum:#1a0a2e;--plum-2:#2d1b69;
+--txt:#fff;--txt-2:#b9b9c0;--txt-3:#83838c;
+--line:rgba(255,255,255,.07);--line-gold:rgba(201,168,76,.18);
+--green:#4caf50;--amazon:#ff9900;
+--g-gold:linear-gradient(135deg,#a8882e 0%,#f4d683 50%,#c9a84c 100%);
+--g-card:linear-gradient(160deg,#17171c 0%,#0f0f12 100%);
+--sh-gold:0 0 50px rgba(201,168,76,.12);
+--sh-card:0 24px 70px rgba(0,0,0,.5);
+--ease:all .45s cubic-bezier(.25,.46,.45,.94);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:110px}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--txt);overflow-x:hidden;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+::selection{background:var(--gold);color:var(--ink)}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:var(--ink-2)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--gold-dark),var(--gold));border-radius:8px}
+
+/* 3. PROGRESS BAR */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--g-gold);z-index:100000;transition:width .1s linear;box-shadow:0 0 12px rgba(201,168,76,.6)}
+
+/* 4. SCROLL REVEAL */
+.sr{opacity:0;transform:translateY(55px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.sr.in{opacity:1;transform:translateY(0)}
+.sr-l{opacity:0;transform:translateX(-70px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.sr-l.in{opacity:1;transform:translateX(0)}
+.sr-r{opacity:0;transform:translateX(70px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.sr-r.in{opacity:1;transform:translateX(0)}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+
+/* 5. PARTICLES */
+#particles{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.particle{position:absolute;background:var(--gold);border-radius:50%;opacity:0;animation:floatUp 12s infinite linear}
+@keyframes floatUp{0%{opacity:0;transform:translateY(105vh) scale(0)}15%{opacity:.5}85%{opacity:.18}100%{opacity:0;transform:translateY(-8vh) scale(1.1)}}
+
+/* 6. TOP BAR */
+.topbar{background:linear-gradient(90deg,#1a0a2e,#0a0a0a,#1a0a2e);border-bottom:1px solid var(--line-gold);padding:9px 0;position:fixed;top:0;left:0;width:100%;z-index:10001;font-size:.76rem;transition:var(--ease)}
+.topbar-inner{max-width:1340px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar-left{display:flex;align-items:center;gap:22px;color:var(--txt-3)}
+.topbar-left span{display:flex;align-items:center;gap:7px}
+.topbar-left i{color:var(--gold);font-size:.72rem}
+.topbar-mail{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:600;transition:var(--ease)}
+.topbar-mail:hover{color:var(--gold-light)}
+
+/* 7. NAV */
+.navbar{position:fixed;top:38px;left:0;width:100%;z-index:10000;padding:16px 0;transition:var(--ease)}
+.navbar.scrolled{top:0;background:rgba(8,8,10,.94);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);padding:11px 0;border-bottom:1px solid var(--line-gold);box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.nav-inner{max-width:1340px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:13px}
+.nav-logo-mark{width:44px;height:44px;border-radius:12px;background:var(--g-gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;font-size:1.05rem;color:var(--ink);box-shadow:0 6px 22px rgba(201,168,76,.28);flex-shrink:0}
+.nav-logo-txt{font-family:'Playfair Display',serif;font-weight:700;font-size:1.16rem;line-height:1.2}
+.nav-logo-txt span{color:var(--gold)}
+.nav-logo-tag{display:block;font-family:'Inter',sans-serif;font-size:.58rem;letter-spacing:2.6px;text-transform:uppercase;color:var(--txt-3);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-size:.8rem;font-weight:600;color:var(--txt-2);text-transform:uppercase;letter-spacing:.9px;position:relative;transition:var(--ease)}
+.nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--g-gold);transition:width .35s ease}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--g-gold);color:var(--ink)!important;padding:11px 24px;border-radius:8px;font-weight:800!important;font-size:.74rem!important;letter-spacing:1.1px!important;transition:var(--ease)}
+.nav-cta::after{display:none!important}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,168,76,.36)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:10005;padding:6px}
+.burger span{width:26px;height:2px;background:var(--gold);transition:var(--ease);border-radius:2px}
+.burger.on span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* 8. HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:170px 0 90px}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(140deg,#0a0a0a 0%,#150a26 45%,#0a0a0a 100%);z-index:0}
+.hero-grid-overlay{position:absolute;inset:0;z-index:0;opacity:.35;background-image:linear-gradient(rgba(201,168,76,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.045) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 78%)}
+.orb{position:absolute;border-radius:50%;filter:blur(110px);z-index:0}
+.orb1{width:640px;height:640px;background:var(--plum-2);opacity:.22;top:-220px;right:-190px;animation:orbA 17s ease-in-out infinite}
+.orb2{width:430px;height:430px;background:var(--gold);opacity:.1;bottom:-140px;left:-120px;animation:orbB 14s ease-in-out infinite}
+@keyframes orbA{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-55px,55px) scale(1.12)}}
+@keyframes orbB{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(38px,-46px) scale(1.07)}}
+.hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr .85fr;gap:66px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.28);padding:9px 20px;border-radius:50px;font-size:.7rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2.4px;margin-bottom:26px;animation:fadeUp .9s ease .25s both}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(76,175,80,.6)}70%{box-shadow:0 0 0 10px rgba(76,175,80,0)}100%{box-shadow:0 0 0 0 rgba(76,175,80,0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.85rem);font-weight:800;line-height:1.12;margin-bottom:24px;letter-spacing:-.5px;animation:fadeUp 1s ease .4s both}
+.gold-txt{background:var(--g-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.04rem;color:var(--txt-2);line-height:1.9;margin-bottom:34px;max-width:580px;animation:fadeUp 1s ease .55s both}
+.hero-mail-line{display:inline-flex;align-items:center;gap:11px;margin-bottom:34px;padding:11px 20px;border-radius:10px;background:rgba(255,255,255,.035);border:1px solid var(--line);font-size:.85rem;animation:fadeUp 1s ease .65s both;flex-wrap:wrap}
+.hero-mail-line i{color:var(--gold)}
+.hero-mail-line a{color:var(--gold-light);font-weight:600}
+.hero-mail-line a:hover{text-decoration:underline}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp 1s ease .75s both}
+.btn-gold{display:inline-flex;align-items:center;gap:11px;background:var(--g-gold);color:var(--ink);padding:16px 32px;border-radius:9px;font-weight:800;font-size:.84rem;text-transform:uppercase;letter-spacing:1.1px;transition:var(--ease);border:none;cursor:pointer;position:relative;overflow:hidden}
+.btn-gold::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transition:left .6s ease}
+.btn-gold:hover::before{left:100%}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 38px rgba(201,168,76,.34)}
+.btn-ghost{display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,.02);color:var(--txt);padding:16px 32px;border-radius:9px;font-weight:700;font-size:.84rem;text-transform:uppercase;letter-spacing:1.1px;transition:var(--ease);border:1px solid rgba(255,255,255,.16);cursor:pointer}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);background:rgba(201,168,76,.06)}
+.hero-visual{display:flex;justify-content:center;animation:heroImg 1.3s cubic-bezier(.2,.8,.2,1) .6s both}
+@keyframes heroImg{from{opacity:0;transform:translateY(44px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
+.hero-img-wrap{position:relative;width:330px}
+.hero-img-frame{position:absolute;inset:-14px;border:1px solid rgba(201,168,76,.28);border-radius:50%;animation:spinSlow 22s linear infinite}
+.hero-img-frame::before,.hero-img-frame::after{content:'';position:absolute;width:9px;height:9px;background:var(--gold);border-radius:50%}
+.hero-img-frame::before{top:-5px;left:50%}
+.hero-img-frame::after{bottom:-5px;left:50%}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.hero-img{width:330px;height:330px;object-fit:cover;object-position:center;border-radius:50%;position:relative;z-index:2;border:4px solid rgba(201,168,76,.4);box-shadow:var(--sh-gold),var(--sh-card);background:#17171c}
+.hero-img-glow{position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);width:78%;height:66px;background:var(--gold);filter:blur(56px);opacity:.25;border-radius:50%;z-index:1}
+.float-chip{position:absolute;z-index:4;background:rgba(16,16,20,.94);backdrop-filter:blur(14px);border:1px solid rgba(201,168,76,.26);border-radius:13px;padding:12px 17px;display:flex;align-items:center;gap:11px;box-shadow:0 14px 36px rgba(0,0,0,.5);animation:bob 3.4s ease-in-out infinite}
+.float-chip-1{bottom:24px;right:-58px}
+.float-chip-2{top:18px;left:-62px;animation-delay:1.7s}
+.float-chip-3{bottom:-30px;left:40px;animation-delay:.9s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.chip-ico{width:34px;height:34px;border-radius:9px;background:rgba(201,168,76,.14);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.8rem}
+.chip-txt{font-size:.66rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap}
+.chip-txt strong{display:block;color:var(--txt);font-size:.88rem;letter-spacing:0;text-transform:none;font-family:'Playfair Display',serif}
+
+/* 9. METRICS */
+.metrics{padding:58px 0;background:var(--ink-2);border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold);position:relative;z-index:3}
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.metric{text-align:center;padding:14px 10px;border-right:1px solid var(--line)}
+.metric:last-child{border-right:none}
+.metric-num{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;background:var(--g-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;margin-bottom:7px}
+.metric-lbl{font-size:.72rem;color:var(--txt-3);font-weight:600;text-transform:uppercase;letter-spacing:1.8px}
+
+/* 10. TRUST */
+.trust{padding:44px 0;background:var(--ink);text-align:center;position:relative;z-index:3}
+.trust-label{font-size:.68rem;color:var(--txt-3);text-transform:uppercase;letter-spacing:3.2px;margin-bottom:24px;font-weight:600}
+.trust-row{display:flex;align-items:center;justify-content:center;gap:46px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:9px;font-size:.84rem;font-weight:600;color:var(--txt-3);opacity:.55;transition:var(--ease)}
+.trust-item:hover{opacity:1;color:var(--gold);transform:translateY(-3px)}
+.trust-item i{font-size:1.3rem}
+
+/* 11. SECTION HEADS */
+.sec{padding:106px 0;position:relative;z-index:3}
+.sec-alt{background:var(--ink-2)}
+.sec-head{text-align:center;margin-bottom:62px}
+.sec-tag{display:inline-flex;align-items:center;gap:12px;font-size:.68rem;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:3.4px;margin-bottom:18px}
+.sec-tag::before,.sec-tag::after{content:'';width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.sec-tag::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.85rem);font-weight:800;line-height:1.2;margin-bottom:18px;letter-spacing:-.4px}
+.sec-sub{font-size:1rem;color:var(--txt-2);max-width:680px;margin:0 auto;line-height:1.9}
+
+/* 12. ABOUT */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:66px;align-items:center}
+.about-img-box{position:relative;display:flex;justify-content:center}
+.about-img{width:340px;height:340px;object-fit:cover;border-radius:24px;box-shadow:var(--sh-card);border:1px solid var(--line-gold);background:#17171c}
+.about-img-frame{position:absolute;top:20px;left:50%;transform:translateX(-42%);width:340px;height:340px;border:1px solid rgba(201,168,76,.2);border-radius:24px;z-index:-1}
+.about-exp-badge{position:absolute;bottom:-20px;right:0;background:var(--g-gold);color:var(--ink);padding:16px 22px;border-radius:14px;text-align:center;box-shadow:0 16px 42px rgba(201,168,76,.3)}
+.about-exp-badge strong{display:block;font-family:'Playfair Display',serif;font-size:1.7rem;line-height:1}
+.about-exp-badge span{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:1.4px}
+.about-h{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.4vw,2.35rem);font-weight:800;margin-bottom:20px;line-height:1.24}
+.about-p{font-size:.97rem;color:var(--txt-2);line-height:1.95;margin-bottom:17px}
+.about-sig{margin-top:24px;padding:18px 22px;border-left:3px solid var(--gold);background:rgba(201,168,76,.05);border-radius:0 12px 12px 0}
+.about-sig p{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-style:italic;color:var(--txt-2)}
+.about-sig strong{display:block;margin-top:9px;font-family:'Playfair Display',serif;font-style:normal;color:var(--gold);font-size:.96rem}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.about-feat{display:flex;align-items:center;gap:11px;font-size:.87rem;font-weight:500;color:var(--txt-2)}
+.about-feat i{color:var(--gold);font-size:.82rem}
+
+/* 13. AUTHORS */
+.auth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.auth-card{background:var(--g-card);border:1px solid var(--line);border-radius:22px;padding:34px 28px 32px;transition:var(--ease);position:relative;overflow:hidden}
+.auth-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--g-gold);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+.auth-card::after{content:'\201C';position:absolute;top:4px;right:22px;font-family:'Playfair Display',serif;font-size:6rem;color:rgba(201,168,76,.06);line-height:1}
+.auth-card:hover{transform:translateY(-10px);border-color:var(--line-gold);box-shadow:var(--sh-gold),var(--sh-card)}
+.auth-card:hover::before{transform:scaleX(1)}
+.auth-head{display:flex;align-items:center;gap:15px;margin-bottom:22px;position:relative;z-index:2}
+.auth-pic-link{position:relative;flex-shrink:0;display:block}
+.auth-pic{width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--gold);transition:var(--ease);cursor:pointer;background:#17171c}
+.auth-pic-link:hover .auth-pic{transform:scale(1.07);box-shadow:0 0 26px rgba(201,168,76,.42)}
+.auth-verify{position:absolute;bottom:0;right:-2px;width:22px;height:22px;background:var(--green);border:2px solid var(--ink-3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.56rem;color:#fff}
+.auth-name{font-family:'Playfair Display',serif;font-size:1.14rem;font-weight:700;margin-bottom:3px}
+.auth-name a{transition:var(--ease)}
+.auth-name a:hover{color:var(--gold)}
+.auth-genre{font-size:.66rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1.6px}
+.auth-mail{display:flex;align-items:flex-start;gap:7px;margin-top:7px;font-size:.7rem;word-break:break-all}
+.auth-mail i{color:var(--gold);font-size:.64rem;flex-shrink:0;margin-top:5px}
+.auth-mail a{color:var(--txt-3);transition:var(--ease)}
+.auth-mail a:hover{color:var(--gold);text-decoration:underline}
+.auth-book-wrap{text-align:center;margin:22px 0 20px;position:relative;z-index:2}
+.book-link{display:inline-block;position:relative;transition:var(--ease);border-radius:12px}
+.book-link:hover{transform:translateY(-5px) scale(1.03)}
+.book-frame{width:190px;height:190px;border-radius:12px;background:linear-gradient(145deg,#1c1c22,#111116);border:1px solid var(--line-gold);box-shadow:0 14px 38px rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;overflow:hidden;padding:8px}
+.book-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:4px;box-shadow:0 6px 18px rgba(0,0,0,.55)}
+.book-hover{position:absolute;inset:0;background:rgba(10,10,10,.8);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px;opacity:0;transition:var(--ease);border-radius:12px;color:var(--gold);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px}
+.book-link:hover .book-hover{opacity:1}
+.book-hover i{font-size:1.3rem}
+.amz-btn{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:9px 18px;background:rgba(255,153,0,.09);border:1px solid rgba(255,153,0,.35);border-radius:9px;font-size:.74rem;font-weight:700;color:var(--amazon);transition:var(--ease);text-transform:uppercase;letter-spacing:.8px}
+.amz-btn:hover{background:var(--amazon);color:#111;transform:translateY(-3px);box-shadow:0 10px 26px rgba(255,153,0,.28)}
+.amz-btn:hover svg path{fill:#111!important}
+.amz-btn svg{flex-shrink:0}
+.auth-store-link{display:block;margin-top:10px;font-size:.7rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:1.2px;transition:var(--ease)}
+.auth-store-link:hover{color:var(--gold)}
+.auth-quote{font-family:'Cormorant Garamond',serif;font-size:1.06rem;font-style:italic;color:var(--txt-2);line-height:1.85;padding-left:18px;border-left:2px solid rgba(201,168,76,.32);position:relative;z-index:2}
+.auth-stars{display:flex;gap:3px;margin:16px 0 14px;color:var(--gold);font-size:.78rem;position:relative;z-index:2}
+.auth-results{margin-top:18px;display:flex;flex-direction:column;gap:9px;position:relative;z-index:2}
+.auth-res{display:flex;align-items:flex-start;gap:9px;font-size:.79rem;font-weight:500;color:var(--txt-2);line-height:1.5}
+.auth-res i{color:var(--green);font-size:.72rem;margin-top:5px;flex-shrink:0}
+
+/* 14. READER */
+.reader-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.reader-h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin-bottom:12px;color:var(--gold)}
+.steps{margin-top:30px;display:flex;flex-direction:column;gap:22px}
+.step{display:flex;gap:17px;align-items:flex-start}
+.step-n{min-width:46px;height:46px;border-radius:13px;background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.28);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:1rem;color:var(--gold)}
+.step h4{font-size:.98rem;font-weight:700;margin-bottom:4px}
+.step p{font-size:.85rem;color:var(--txt-3);line-height:1.65}
+
+/* 15. FORMS */
+.form-card{background:var(--g-card);border:1px solid var(--line-gold);border-radius:22px;padding:40px 36px;box-shadow:var(--sh-card);position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--g-gold)}
+.form-card h3{font-family:'Playfair Display',serif;font-size:1.44rem;font-weight:700;margin-bottom:7px;text-align:center}
+.form-note{text-align:center;font-size:.84rem;color:var(--txt-3);margin-bottom:26px}
+.fg{margin-bottom:17px}
+.fg label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;color:var(--txt-2);margin-bottom:8px}
+.req{color:var(--gold)}
+.fg input,.fg select,.fg textarea{width:100%;padding:14px 17px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:10px;color:var(--txt);font-family:'Inter',sans-serif;font-size:.9rem;transition:var(--ease);outline:none}
+.fg input::placeholder,.fg textarea::placeholder{color:#5c5c66}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold);background:rgba(201,168,76,.05);box-shadow:0 0 0 3px rgba(201,168,76,.09)}
+.fg textarea{min-height:108px;resize:vertical}
+.fg select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%3E%3Cpath%20fill%3D%22%23c9a84c%22%20d%3D%22M6%208L0%200h12z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right 17px center}
+.fg select option{background:#15151a;color:var(--txt)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.cbs{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+.cb{display:flex;align-items:center;gap:7px;font-size:.78rem;color:var(--txt-2);padding:8px 13px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:8px;cursor:pointer;transition:var(--ease)}
+.cb:hover{border-color:rgba(201,168,76,.4);color:var(--gold)}
+.cb input{width:15px;height:15px;accent-color:var(--gold);cursor:pointer}
+.submit-btn{width:100%;padding:16px;background:var(--g-gold);color:var(--ink);font-weight:800;font-size:.86rem;text-transform:uppercase;letter-spacing:1.2px;border:none;border-radius:11px;cursor:pointer;transition:var(--ease);font-family:'Inter',sans-serif;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:10px}
+.submit-btn:hover{transform:translateY(-3px);box-shadow:0 13px 34px rgba(201,168,76,.33)}
+.submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-msg{margin-top:16px;padding:14px 18px;border-radius:10px;font-size:.85rem;display:none;text-align:center}
+.form-msg.ok{display:block;background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.35);color:#7ed982}
+.form-msg.err{display:block;background:rgba(244,67,54,.1);border:1px solid rgba(244,67,54,.35);color:#ef9a9a}
+.form-direct{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);text-align:center;font-size:.8rem;color:var(--txt-3)}
+.form-direct a{color:var(--gold);font-weight:600}
+.form-direct a:hover{text-decoration:underline}
+
+/* 16. PACKAGES */
+.pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch}
+.pk{background:var(--g-card);border:1px solid var(--line);border-radius:22px;padding:40px 30px;transition:var(--ease);position:relative;display:flex;flex-direction:column;overflow:hidden}
+.pk.hot{border-color:rgba(201,168,76,.45);box-shadow:var(--sh-gold)}
+.pk.hot::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--g-gold)}
+.pk:hover{transform:translateY(-9px);border-color:var(--line-gold);box-shadow:var(--sh-gold),var(--sh-card)}
+.pk-tier{display:inline-block;align-self:flex-start;font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:1.8px;padding:5px 13px;border-radius:50px;margin-bottom:20px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);color:var(--gold)}
+.pk.hot .pk-tier{background:var(--g-gold);color:var(--ink);border-color:transparent}
+.pk-ico{width:56px;height:56px;border-radius:15px;background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:var(--gold);margin-bottom:20px}
+.pk-title{font-family:'Playfair Display',serif;font-size:1.36rem;font-weight:700;margin-bottom:9px}
+.pk-desc{font-size:.86rem;color:var(--txt-3);margin-bottom:24px;line-height:1.7}
+.pk-list{margin-bottom:28px;flex-grow:1}
+.pk-list li{display:flex;align-items:flex-start;gap:11px;font-size:.84rem;color:var(--txt-2);margin-bottom:13px;line-height:1.55}
+.pk-list li i{color:var(--gold);font-size:.68rem;margin-top:6px;flex-shrink:0}
+.pk-cta{width:100%;padding:14px;background:transparent;border:1px solid var(--gold);color:var(--gold);font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:1.1px;border-radius:9px;cursor:pointer;transition:var(--ease);font-family:'Inter',sans-serif;display:flex;align-items:center;justify-content:center;gap:9px}
+.pk-cta:hover{background:var(--g-gold);color:var(--ink);border-color:transparent}
+.pk.hot .pk-cta{background:var(--g-gold);color:var(--ink);border-color:transparent}
+
+/* 17. TIMELINE */
+.tl{max-width:840px;margin:0 auto;position:relative}
+.tl::before{content:'';position:absolute;left:29px;top:26px;bottom:26px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(201,168,76,.06))}
+.tl-item{display:flex;gap:30px;align-items:flex-start;padding:22px 0;position:relative}
+.tl-dot{min-width:60px;height:60px;border-radius:50%;background:var(--ink-3);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:800;font-size:1.05rem;color:var(--gold);z-index:2;transition:var(--ease)}
+.tl-item:hover .tl-dot{background:var(--g-gold);color:var(--ink);box-shadow:0 0 28px rgba(201,168,76,.4)}
+.tl-body{padding-top:6px}
+.tl-body h4{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:700;margin-bottom:8px;color:var(--gold)}
+.tl-body p{font-size:.9rem;color:var(--txt-2);line-height:1.8}
+
+/* 18. INQUIRY */
+.inq-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:50px;align-items:start}
+.inq-h3{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;margin-bottom:16px}
+.inq-p{font-size:.93rem;color:var(--txt-2);line-height:1.85;margin-bottom:28px}
+.trust-list{display:flex;flex-direction:column;gap:15px}
+.trust-li{display:flex;align-items:center;gap:14px;padding:12px 14px;background:rgba(255,255,255,.022);border:1px solid var(--line);border-radius:12px;transition:var(--ease)}
+.trust-li:hover{border-color:var(--line-gold);transform:translateX(5px)}
+.trust-li-ico{width:42px;height:42px;border-radius:11px;background:rgba(201,168,76,.1);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.95rem;flex-shrink:0}
+.trust-li-tx{font-size:.85rem;font-weight:500;color:var(--txt-2)}
+.inq-profile{margin-top:34px;padding:26px;background:var(--g-card);border:1px solid var(--line-gold);border-radius:18px;text-align:center}
+.inq-profile img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 0 34px rgba(201,168,76,.22);margin:0 auto 14px;background:#17171c}
+.inq-profile h4{font-family:'Playfair Display',serif;font-size:1.14rem;font-weight:700}
+.inq-profile .role{font-size:.74rem;color:var(--txt-3);text-transform:uppercase;letter-spacing:1.6px;margin-bottom:12px}
+.mail-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.28);border-radius:50px;font-size:.76rem;color:var(--gold);font-weight:600;transition:var(--ease);word-break:break-all}
+.mail-pill:hover{background:var(--g-gold);color:var(--ink)}
+.form-owner{display:flex;align-items:center;gap:14px;margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.form-owner img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:#17171c;flex-shrink:0}
+.form-owner-tx{font-size:.78rem;color:var(--txt-3);line-height:1.5}
+.form-owner-tx strong{display:block;color:var(--txt);font-size:.92rem;font-family:'Playfair Display',serif}
+
+/* 19. CONTACT BANNER */
+.contact-banner{padding:78px 0;background:linear-gradient(120deg,#150a26,#0a0a0a 60%);position:relative;z-index:3;border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold)}
+.cb-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap}
+.cb-left h3{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.15rem);font-weight:800;margin-bottom:10px}
+.cb-left p{font-size:.95rem;color:var(--txt-2);max-width:520px}
+.cb-mail-big{display:inline-flex;align-items:center;gap:13px;margin-top:18px;padding:15px 26px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.3);border-radius:12px;font-size:.95rem;font-weight:700;color:var(--gold);transition:var(--ease);word-break:break-all}
+.cb-mail-big:hover{background:var(--g-gold);color:var(--ink);transform:translateY(-3px);box-shadow:0 14px 36px rgba(201,168,76,.3)}
+
+/* 20. FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:1040px;margin:0 auto}
+.faq{background:var(--g-card);border:1px solid var(--line);border-radius:15px;padding:22px 24px;cursor:pointer;transition:var(--ease);height:fit-content}
+.faq:hover{border-color:rgba(201,168,76,.25)}
+.faq.on{border-color:var(--line-gold);background:rgba(201,168,76,.035)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-q h4{font-size:.93rem;font-weight:600;line-height:1.45}
+.faq-q i{color:var(--gold);font-size:.8rem;transition:transform .35s ease;flex-shrink:0}
+.faq.on .faq-q i{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),padding-top .45s ease}
+.faq.on .faq-a{max-height:340px;padding-top:14px}
+.faq-a p{font-size:.86rem;color:var(--txt-3);line-height:1.75}
+
+/* 21. FOOTER */
+.footer{padding:78px 0 28px;background:var(--ink-2);border-top:1px solid var(--line-gold);position:relative;z-index:3}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:42px;margin-bottom:48px}
+.f-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.f-logo-mark{width:40px;height:40px;border-radius:11px;background:var(--g-gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;color:var(--ink)}
+.f-logo-txt{font-family:'Playfair Display',serif;font-size:1.16rem;font-weight:700}
+.f-logo-txt span{color:var(--gold)}
+.f-desc{font-size:.85rem;color:var(--txt-3);line-height:1.75;margin-bottom:20px}
+.f-mail{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.24);border-radius:10px;font-size:.8rem;color:var(--gold);font-weight:600;transition:var(--ease);word-break:break-all}
+.f-mail:hover{background:var(--g-gold);color:var(--ink)}
+.f-note{margin-top:16px;font-size:.76rem;color:var(--txt-3);display:flex;align-items:center;gap:8px}
+.f-note i{color:var(--gold)}
+.f-col h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:20px;color:var(--gold)}
+.f-col li{margin-bottom:11px}
+.f-col a{font-size:.84rem;color:var(--txt-3);transition:var(--ease);display:inline-flex;align-items:center;gap:7px}
+.f-col a:hover{color:var(--gold);transform:translateX(4px)}
+.f-authors li{margin-bottom:14px}
+.f-author-line{display:flex;flex-direction:column;gap:3px}
+.f-author-line strong{font-size:.84rem;color:var(--txt-2);font-weight:600}
+.f-author-line a{font-size:.71rem;color:var(--txt-3);word-break:break-all}
+.f-amz{display:inline-flex;align-items:center;gap:6px;font-size:.68rem!important;color:var(--amazon)!important;font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+.f-amz:hover{color:#ffb84d!important}
+.f-bottom{border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:13px}
+.f-bottom p{font-size:.76rem;color:var(--txt-3)}
+.f-bottom-links{display:flex;gap:20px;flex-wrap:wrap}
+.f-bottom-links a{font-size:.76rem;color:var(--txt-3);transition:var(--ease)}
+.f-bottom-links a:hover{color:var(--gold)}
+
+/* 22. FLOATING */
+.float-mail{position:fixed;bottom:30px;left:30px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:13px 20px;background:var(--g-gold);color:var(--ink);border-radius:50px;font-size:.8rem;font-weight:800;box-shadow:0 12px 32px rgba(201,168,76,.32);transition:var(--ease);opacity:0;visibility:hidden;transform:translateY(20px)}
+.float-mail.show{opacity:1;visibility:visible;transform:translateY(0)}
+.float-mail:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(201,168,76,.45)}
+.to-top{position:fixed;bottom:30px;right:30px;width:48px;height:48px;border-radius:13px;background:var(--g-gold);color:var(--ink);display:flex;align-items:center;justify-content:center;font-size:.95rem;cursor:pointer;z-index:9999;opacity:0;visibility:hidden;transition:var(--ease);border:none;box-shadow:0 10px 28px rgba(201,168,76,.3)}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{transform:translateY(-5px)}
+
+/* 23. RESPONSIVE */
+@media(max-width:1100px){
+.hero-inner{grid-template-columns:1fr;text-align:center;gap:48px}
+.hero-sub{margin:0 auto 30px}
+.hero-cta,.hero-mail-line{justify-content:center}
+.hero-visual{order:-1}
+.hero-img-wrap{width:270px}
+.hero-img{width:270px;height:270px}
+.float-chip-1{right:-30px}.float-chip-2{left:-30px}.float-chip-3{display:none}
+.auth-grid{grid-template-columns:1fr;max-width:500px;margin:0 auto}
+.pk-grid{grid-template-columns:1fr;max-width:470px;margin:0 auto}
+.about-grid{grid-template-columns:1fr;text-align:center;gap:70px}
+.about-img-frame{transform:translateX(-46%)}
+.about-feats{max-width:420px;margin:30px auto 0}
+.about-sig{text-align:left}
+.reader-grid,.inq-grid,.faq-grid{grid-template-columns:1fr}
+.f-grid{grid-template-columns:1fr 1fr}
+.metric{border-right:none}
+}
+@media(max-width:860px){
+.topbar-left span:nth-child(2){display:none}
+.nav-links{display:none;position:fixed;inset:0;height:100vh;background:rgba(8,8,10,.985);backdrop-filter:blur(24px);flex-direction:column;justify-content:center;align-items:center;gap:26px}
+.nav-links.on{display:flex}
+.nav-links a{font-size:1.05rem}
+.burger{display:flex}
+.metrics-grid{grid-template-columns:1fr 1fr;gap:12px}
+.fr{grid-template-columns:1fr}
+.f-grid{grid-template-columns:1fr}
+.f-bottom{flex-direction:column;text-align:center}
+.float-mail span{display:none}
+.float-mail{padding:14px;border-radius:50%}
+.sec{padding:78px 0}
+.form-card{padding:30px 22px}
+}
+@media(max-width:480px){
+.container{padding:0 18px}
+.hero-img-wrap{width:220px}
+.hero-img{width:220px;height:220px}
+.float-chip{display:none}
+.trust-row{gap:24px}
+.to-top,.float-mail{bottom:20px}
+.to-top{right:18px}.float-mail{left:18px}
+.about-img,.about-img-frame{width:270px;height:270px}
+.about-exp-badge{right:-10px;padding:12px 16px}
+.book-frame{width:170px;height:170px}
+.topbar{font-size:.68rem}
+}
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-content">
+    <div class="preloader-ring"></div>
+    <div class="preloader-logo">TAYO MARVELLOUS</div>
+    <div class="preloader-sub">Book Marketing Specialist</div>
+    <div class="preloader-bar-container"><div class="preloader-bar"></div></div>
+  </div>
+</div>
+
+<div id="scroll-progress"></div>
+<div id="particles"></div>
+
+<!-- TOP BAR -->
+<div class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fas fa-circle-check"></i> Fully Email Documented Campaigns</span>
+      <span><i class="fas fa-globe"></i> Serving Authors Worldwide</span>
+    </div>
+    <a href="mailto:tayomarvellous18@gmail.com" class="topbar-mail"><i class="fas fa-envelope"></i> tayomarvellous18@gmail.com</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-mark">TM</div>
+      <div class="nav-logo-txt">Tayo <span>Marvellous</span><span class="nav-logo-tag">Book Marketing Specialist</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#authors">Authors</a></li>
+      <li><a href="#readers">Reader Club</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#process">Workflow</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#inquiry" class="nav-cta">Request Campaign</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="live-dot"></span> Accepting New Author Campaigns</div>
+        <h1 class="hero-title">Connecting Exceptional Books With <span class="gold-txt">Passionate Readers.</span></h1>
+        <p class="hero-sub">Whether you are a reader searching for free advance copies and exclusive giveaways, or an author ready to scale your book to bestseller status with documented weekly email reporting, you have arrived at the right place.</p>
+        <div class="hero-mail-line">
+          <i class="fas fa-envelope-open-text"></i> Direct Inquiries:
+          <a href="mailto:tayomarvellous18@gmail.com">tayomarvellous18@gmail.com</a>
+        </div>
+        <div class="hero-cta">
+          <a href="#inquiry" class="btn-gold"><i class="fas fa-rocket"></i> Request Campaign</a>
+          <a href="#readers" class="btn-ghost"><i class="fas fa-book-open"></i> Join Reader Club</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <div class="hero-img-frame"></div>
+          <img class="hero-img smart-img"
+               src="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s600-c"
+               data-fallback="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s60-c"
+               alt="Tayo Marvellous, Book Marketing Specialist" referrerpolicy="no-referrer">
+          <div class="hero-img-glow"></div>
+          <div class="float-chip float-chip-1"><div class="chip-ico"><i class="fas fa-trophy"></i></div><div class="chip-txt"><strong>150+</strong> Campaigns</div></div>
+          <div class="float-chip float-chip-2"><div class="chip-ico"><i class="fas fa-award"></i></div><div class="chip-txt"><strong>Top 100</strong> Rankings</div></div>
+          <div class="float-chip float-chip-3"><div class="chip-ico"><i class="fas fa-file-shield"></i></div><div class="chip-txt"><strong>Documented</strong> Reporting</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section class="metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric sr"><div class="metric-num" data-target="10000" data-suffix="+">0</div><div class="metric-lbl">Active ARC Readers</div></div>
+      <div class="metric sr d1"><div class="metric-num" data-target="150" data-suffix="+">0</div><div class="metric-lbl">Author Campaigns</div></div>
+      <div class="metric sr d2"><div class="metric-num" data-target="100" data-suffix="%">0</div><div class="metric-lbl">Email Documented</div></div>
+      <div class="metric sr d3"><div class="metric-num" data-target="50" data-suffix="+">0</div><div class="metric-lbl">Top 100 Amazon Hits</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container">
+    <p class="trust-label">Trusted Platforms And Tools We Work With</p>
+    <div class="trust-row">
+      <div class="trust-item"><i class="fab fa-amazon"></i> Amazon KDP</div>
+      <div class="trust-item"><i class="fas fa-book-bookmark"></i> Goodreads</div>
+      <div class="trust-item"><i class="fas fa-bullhorn"></i> Paid Advertising</div>
+      <div class="trust-item"><i class="fas fa-envelope-circle-check"></i> MailerLite</div>
+      <div class="trust-item"><i class="fas fa-lock"></i> Secure Invoicing</div>
+      <div class="trust-item"><i class="fas fa-file-shield"></i> Written Contracts</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-box sr-l">
+        <div class="about-img-frame"></div>
+        <img class="about-img smart-img"
+             src="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s600-c"
+             data-fallback="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s60-c"
+             alt="Tayo Marvellous, Specialist Book Marketing Expert" referrerpolicy="no-referrer">
+        <div class="about-exp-badge"><strong>150+</strong><span>Books Marketed</span></div>
+      </div>
+      <div class="about-content sr-r">
+        <div class="sec-tag">About Tayo Marvellous</div>
+        <h2 class="about-h">Your Dedicated <span class="gold-txt">Book Marketing</span> Specialist</h2>
+        <p class="about-p">I am Tayo Marvellous, a specialist book marketing expert committed to helping authors achieve measurable and fully documented results. I believe every great book deserves to find its audience, and every author deserves absolute transparency in how their marketing budget is invested.</p>
+        <p class="about-p">My approach is deliberate and disciplined. No vague phone calls, no hollow promises, and no unverifiable claims. Every campaign I manage runs through structured email communication, ensuring each strategy, each dollar spent, and each result achieved is recorded, traceable and permanently accountable.</p>
+        <div class="about-sig">
+          <p>"If it is not written down and documented, it did not happen. That is the standard I hold every campaign to."</p>
+          <strong>Tayo Marvellous</strong>
+        </div>
+        <div class="about-feats">
+          <div class="about-feat"><i class="fas fa-circle-check"></i> Amazon Ads Management</div>
+          <div class="about-feat"><i class="fas fa-circle-check"></i> ARC Team Distribution</div>
+          <div class="about-feat"><i class="fas fa-circle-check"></i> Paid Ad Campaigns</div>
+          <div class="about-feat"><i class="fas fa-circle-check"></i> Email First Workflow</div>
+          <div class="about-feat"><i class="fas fa-circle-check"></i> Metadata And Keyword SEO</div>
+          <div class="about-feat"><i class="fas fa-circle-check"></i> Blurb And Copy Optimization</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHORS -->
+<section class="sec sec-alt" id="authors">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">Proven Results</div>
+      <h2 class="sec-title">Authors We Have <span class="gold-txt">Worked With</span></h2>
+      <p class="sec-sub">Real authors. Real results. Click any author photo, book cover or Amazon badge to visit their live Amazon author store directly.</p>
+    </div>
+
+    <div class="auth-grid">
+
+      <!-- ELIZABETH STROUT -->
+      <div class="auth-card sr">
+        <div class="auth-head">
+          <a class="auth-pic-link" href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer" aria-label="Visit Elizabeth Strout Amazon author store">
+            <img class="auth-pic smart-img"
+                 src="https://m.media-amazon.com/images/S/amzn-author-media-prod/c2aufk9077b2cha3prs7khc9rg._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+                 data-fallback="https://m.media-amazon.com/images/S/amzn-author-media-prod/c2aufk9077b2cha3prs7khc9rg.jpg"
+                 alt="Elizabeth Strout, Author" loading="lazy" referrerpolicy="no-referrer">
+            <span class="auth-verify"><i class="fas fa-check"></i></span>
+          </a>
+          <div>
+            <h4 class="auth-name"><a href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer">Elizabeth Strout</a></h4>
+            <div class="auth-genre">Literary Fiction</div>
+            <div class="auth-mail"><i class="fas fa-envelope"></i><a href="mailto:infoelizabethstrout.author@gmail.com">infoelizabethstrout.author@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="auth-book-wrap">
+          <a href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer" class="book-link">
+            <div class="book-frame">
+              <img class="book-img smart-img"
+                   src="https://m.media-amazon.com/images/I/71+gnuh1mBL._SY425_.jpg"
+                   data-fallback="https://m.media-amazon.com/images/I/71+gnuh1mBL._SY300_.jpg"
+                   alt="Book by Elizabeth Strout" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <span class="book-hover"><i class="fas fa-up-right-from-square"></i> View On Amazon</span>
+          </a>
+          <br>
+          <a href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer" class="amz-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="#ff9900" d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.925-1.922-2.292 0-2.692 2.413-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.746.074-1.052-.872-1.238-1.276-1.814-2.106-1.734 1.767-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.39-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.539 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.548-.266-.472-.66C6.023 1.083 9.086 0 11.828 0c1.404 0 3.237.374 4.345 1.437 1.404 1.312 1.27 3.063 1.27 4.968v4.498c0 1.353.56 1.947 1.088 2.68.184.26.226.574-.012.768-.589.492-1.636 1.404-2.212 1.916l-.008-.006z"/><path fill="#ff9900" d="M21.873 19.253c-2.62 1.933-6.42 2.962-9.692 2.962-4.587 0-8.716-1.696-11.842-4.518-.245-.222-.026-.525.269-.352 3.372 1.962 7.541 3.143 11.848 3.143 2.905 0 6.1-.602 9.039-1.848.443-.188.814.291.378.613z"/><path fill="#ff9900" d="M22.962 18.011c-.335-.429-2.216-.203-3.061-.102-.257.031-.296-.193-.065-.355 1.499-1.055 3.958-.75 4.244-.397.288.356-.076 2.821-1.482 3.998-.216.181-.422.085-.326-.154.316-.789 1.024-2.559.69-2.99z"/></svg>
+            Visit Amazon Author Store
+          </a>
+          <a class="auth-store-link" href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> amazon.com/stores/Elizabeth-Strout</a>
+        </div>
+
+        <div class="auth-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <div class="auth-quote">"Working with Tayo was an absolute breath of fresh air. Everything was handled completely through email with structured weekly reports. My book reached bestseller status and I always knew precisely where my campaign stood at any moment."</div>
+        <div class="auth-results">
+          <div class="auth-res"><i class="fas fa-circle-check"></i> Amazon Bestseller Status Achieved</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> 140 Plus Verified Reviews Secured</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> Full Email Documentation Provided</div>
+        </div>
+      </div>
+
+      <!-- TAYLOR JENKINS REID -->
+      <div class="auth-card sr d1">
+        <div class="auth-head">
+          <a class="auth-pic-link" href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer" aria-label="Visit Taylor Jenkins Reid Amazon author store">
+            <img class="auth-pic smart-img"
+                 src="https://m.media-amazon.com/images/S/amzn-author-media-prod/80rvrf599r2ernjs2f4qf8ne70._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+                 data-fallback="https://m.media-amazon.com/images/S/amzn-author-media-prod/80rvrf599r2ernjs2f4qf8ne70.jpg"
+                 alt="Taylor Jenkins Reid, Author" loading="lazy" referrerpolicy="no-referrer">
+            <span class="auth-verify"><i class="fas fa-check"></i></span>
+          </a>
+          <div>
+            <h4 class="auth-name"><a href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer">Taylor Jenkins Reid</a></h4>
+            <div class="auth-genre">Contemporary Fiction</div>
+            <div class="auth-mail"><i class="fas fa-envelope"></i><a href="mailto:taylorjenkinsreid10@gmail.com">taylorjenkinsreid10@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="auth-book-wrap">
+          <a href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer" class="book-link">
+            <div class="book-frame">
+              <img class="book-img smart-img"
+                   src="https://m.media-amazon.com/images/I/51wVy6w0UkL._SY445_SX342_QL70_FMwebp_.jpg"
+                   data-fallback="https://m.media-amazon.com/images/I/51wVy6w0UkL._SY445_.jpg"
+                   alt="Book by Taylor Jenkins Reid" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <span class="book-hover"><i class="fas fa-up-right-from-square"></i> View On Amazon</span>
+          </a>
+          <br>
+          <a href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer" class="amz-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="#ff9900" d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.925-1.922-2.292 0-2.692 2.413-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.746.074-1.052-.872-1.238-1.276-1.814-2.106-1.734 1.767-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.39-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.539 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.548-.266-.472-.66C6.023 1.083 9.086 0 11.828 0c1.404 0 3.237.374 4.345 1.437 1.404 1.312 1.27 3.063 1.27 4.968v4.498c0 1.353.56 1.947 1.088 2.68.184.26.226.574-.012.768-.589.492-1.636 1.404-2.212 1.916l-.008-.006z"/><path fill="#ff9900" d="M21.873 19.253c-2.62 1.933-6.42 2.962-9.692 2.962-4.587 0-8.716-1.696-11.842-4.518-.245-.222-.026-.525.269-.352 3.372 1.962 7.541 3.143 11.848 3.143 2.905 0 6.1-.602 9.039-1.848.443-.188.814.291.378.613z"/><path fill="#ff9900" d="M22.962 18.011c-.335-.429-2.216-.203-3.061-.102-.257.031-.296-.193-.065-.355 1.499-1.055 3.958-.75 4.244-.397.288.356-.076 2.821-1.482 3.998-.216.181-.422.085-.326-.154.316-.789 1.024-2.559.69-2.99z"/></svg>
+            Visit Amazon Author Store
+          </a>
+          <a class="auth-store-link" href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> amazon.com/stores/Taylor-Jenkins-Reid</a>
+        </div>
+
+        <div class="auth-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <div class="auth-quote">"I genuinely appreciate the professional written paper trail Tayo maintains. Every dollar spent on advertising and every reader contacted was documented within our email chain. Complete transparency paired with real measurable results."</div>
+        <div class="auth-results">
+          <div class="auth-res"><i class="fas fa-circle-check"></i> 3.8x Return On Advertising Spend</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> 450 Plus ARC Readers Onboarded</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> Weekly Email Reports Delivered</div>
+        </div>
+      </div>
+
+      <!-- ANN PATCHETT -->
+      <div class="auth-card sr d2">
+        <div class="auth-head">
+          <a class="auth-pic-link" href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer" aria-label="Visit Ann Patchett Amazon author store">
+            <img class="auth-pic smart-img"
+                 src="https://m.media-amazon.com/images/S/amzn-author-media-prod/rlnvkho3cgc2k0ertnnuqdpou9._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+                 data-fallback="https://m.media-amazon.com/images/S/amzn-author-media-prod/rlnvkho3cgc2k0ertnnuqdpou9.jpg"
+                 alt="Ann Patchett, Author" loading="lazy" referrerpolicy="no-referrer">
+            <span class="auth-verify"><i class="fas fa-check"></i></span>
+          </a>
+          <div>
+            <h4 class="auth-name"><a href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer">Ann Patchett</a></h4>
+            <div class="auth-genre">Literary And Non Fiction</div>
+            <div class="auth-mail"><i class="fas fa-envelope"></i><a href="mailto:authorannpatchett.books@gmail.com">authorannpatchett.books@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="auth-book-wrap">
+          <a href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer" class="book-link">
+            <div class="book-frame">
+              <img class="book-img smart-img"
+                   src="https://m.media-amazon.com/images/I/81D4ATVRKPL._SY425_.jpg"
+                   data-fallback="https://m.media-amazon.com/images/I/81D4ATVRKPL._SY300_.jpg"
+                   alt="Book by Ann Patchett" loading="lazy" referrerpolicy="no-referrer">
+            </div>
+            <span class="book-hover"><i class="fas fa-up-right-from-square"></i> View On Amazon</span>
+          </a>
+          <br>
+          <a href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer" class="amz-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="#ff9900" d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.925-1.922-2.292 0-2.692 2.413-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.746.074-1.052-.872-1.238-1.276-1.814-2.106-1.734 1.767-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.39-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.539 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.548-.266-.472-.66C6.023 1.083 9.086 0 11.828 0c1.404 0 3.237.374 4.345 1.437 1.404 1.312 1.27 3.063 1.27 4.968v4.498c0 1.353.56 1.947 1.088 2.68.184.26.226.574-.012.768-.589.492-1.636 1.404-2.212 1.916l-.008-.006z"/><path fill="#ff9900" d="M21.873 19.253c-2.62 1.933-6.42 2.962-9.692 2.962-4.587 0-8.716-1.696-11.842-4.518-.245-.222-.026-.525.269-.352 3.372 1.962 7.541 3.143 11.848 3.143 2.905 0 6.1-.602 9.039-1.848.443-.188.814.291.378.613z"/><path fill="#ff9900" d="M22.962 18.011c-.335-.429-2.216-.203-3.061-.102-.257.031-.296-.193-.065-.355 1.499-1.055 3.958-.75 4.244-.397.288.356-.076 2.821-1.482 3.998-.216.181-.422.085-.326-.154.316-.789 1.024-2.559.69-2.99z"/></svg>
+            Visit Amazon Author Store
+          </a>
+          <a class="auth-store-link" href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> amazon.com/stores/Ann-Patchett</a>
+        </div>
+
+        <div class="auth-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <div class="auth-quote">"Tayo handles book marketing like a seasoned corporate professional. The email only workflow saved me countless hours of unnecessary meetings, and the weekly progress reports gave me total clarity on our trajectory at every stage."</div>
+        <div class="auth-results">
+          <div class="auth-res"><i class="fas fa-circle-check"></i> Amazon Number One New Release Badge</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> 95 Plus Five Star Reviews</div>
+          <div class="auth-res"><i class="fas fa-circle-check"></i> Full Transparency Through Email</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- READER CLUB -->
+<section class="sec" id="readers">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">For Book Lovers</div>
+      <h2 class="sec-title">Join The ARC <span class="gold-txt">Reader Club</span></h2>
+      <p class="sec-sub">Receive free advance copies of upcoming books, enter monthly giveaways and become part of an exclusive community of passionate readers who shape the success of new releases.</p>
+    </div>
+    <div class="reader-grid">
+      <div class="sr-l">
+        <h3 class="reader-h3">How The Reader Club Works</h3>
+        <p style="color:var(--txt-2);font-size:.93rem;line-height:1.85">Join thousands of readers who receive free digital advance copies of unreleased books in exchange for honest and voluntary reviews on Amazon and Goodreads.</p>
+        <div class="steps">
+          <div class="step"><div class="step-n">1</div><div><h4>Sign Up Completely Free</h4><p>Share your name, email address and your favorite reading genres.</p></div></div>
+          <div class="step"><div class="step-n">2</div><div><h4>Receive Free Advance Copies</h4><p>Get early access to new releases through ePub, PDF or direct Kindle delivery.</p></div></div>
+          <div class="step"><div class="step-n">3</div><div><h4>Leave An Honest Review</h4><p>Share your genuine thoughts on Amazon or Goodreads after you finish reading.</p></div></div>
+          <div class="step"><div class="step-n">4</div><div><h4>Win Monthly Giveaways</h4><p>Automatic entry into signed book packages and Kindle gift card drawings.</p></div></div>
+        </div>
+      </div>
+
+      <div class="form-card sr-r">
+        <h3>Join The Reader Club</h3>
+        <p class="form-note">Completely free. Unsubscribe at any time.</p>
+        <form class="ajax-form" action="https://formspree.io/f/mgavzkel" method="POST">
+          <input type="hidden" name="_subject" value="New ARC Reader Club Signup">
+          <input type="hidden" name="Form Type" value="Reader Club Signup">
+          <div class="fg"><label>First Name <span class="req">*</span></label><input type="text" name="First Name" placeholder="Enter your first name" required></div>
+          <div class="fg"><label>Email Address <span class="req">*</span></label><input type="email" name="Reader Email" placeholder="Enter your email address" required></div>
+          <div class="fg">
+            <label>Favorite Genres</label>
+            <div class="cbs">
+              <label class="cb"><input type="checkbox" name="Genres" value="Romance"> Romance</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Mystery and Thriller"> Mystery</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Fantasy and Sci Fi"> Fantasy</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Horror"> Horror</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Non Fiction"> Non Fiction</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Young Adult"> Young Adult</label>
+              <label class="cb"><input type="checkbox" name="Genres" value="Literary Fiction"> Literary</label>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn"><i class="fas fa-book-open-reader"></i> Join The ARC Reader Club</button>
+          <div class="form-msg"></div>
+          <div class="form-direct">Prefer direct email? Write to <a href="mailto:tayomarvellous18@gmail.com">tayomarvellous18@gmail.com</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="sec sec-alt" id="packages">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">For Authors</div>
+      <h2 class="sec-title">Campaign <span class="gold-txt">Packages</span></h2>
+      <p class="sec-sub">Transparent and high impact marketing packages. Every campaign is scoped, agreed upon and tracked strictly through email. No unexpected charges and complete documented accountability.</p>
+    </div>
+    <div class="pk-grid">
+
+      <div class="pk sr">
+        <span class="pk-tier">Package One</span>
+        <div class="pk-ico"><i class="fas fa-star"></i></div>
+        <h3 class="pk-title">ARC And Review Accelerator</h3>
+        <p class="pk-desc">Built for authors preparing for launch day who need genuine honest reviews on Amazon and Goodreads.</p>
+        <ul class="pk-list">
+          <li><i class="fas fa-check"></i> Distribution to our verified genre matched ARC reader database</li>
+          <li><i class="fas fa-check"></i> Review reminder sequences and compliance tracking</li>
+          <li><i class="fas fa-check"></i> Live review monitoring spreadsheet shared through email</li>
+          <li><i class="fas fa-check"></i> Fully compliant with Amazon customer review guidelines</li>
+          <li><i class="fas fa-check"></i> Final review links and complete statistics report</li>
+        </ul>
+        <a href="#inquiry"><button class="pk-cta"><i class="fas fa-envelope"></i> Inquire Via Email</button></a>
+      </div>
+
+      <div class="pk hot sr d1">
+        <span class="pk-tier">Most Requested</span>
+        <div class="pk-ico"><i class="fas fa-rocket"></i></div>
+        <h3 class="pk-title">Metadata And Visibility Surge</h3>
+        <p class="pk-desc">Ideal for new releases or dormant backlist titles that need stronger conversion and keyword ranking power.</p>
+        <ul class="pk-list">
+          <li><i class="fas fa-check"></i> Deep Amazon keyword research with high volume low competition targets</li>
+          <li><i class="fas fa-check"></i> Strategic Amazon category selection and ranking pathways</li>
+          <li><i class="fas fa-check"></i> High converting book description written with HTML styling</li>
+          <li><i class="fas fa-check"></i> A Plus Content strategy and layout recommendations</li>
+          <li><i class="fas fa-check"></i> Before and after optimization audit delivered as an email PDF</li>
+        </ul>
+        <a href="#inquiry"><button class="pk-cta"><i class="fas fa-envelope"></i> Inquire Via Email</button></a>
+      </div>
+
+      <div class="pk sr d2">
+        <span class="pk-tier">Premium Tier</span>
+        <div class="pk-ico"><i class="fas fa-crown"></i></div>
+        <h3 class="pk-title">Full Bestseller Launch</h3>
+        <p class="pk-desc">Our complete full scale marketing service for authors pursuing maximum rank, visibility and sustained sales.</p>
+        <ul class="pk-list">
+          <li><i class="fas fa-check"></i> Complete advertising setup, copy, creative and daily management</li>
+          <li><i class="fas fa-check"></i> Dedicated ARC team distribution for strong early review velocity</li>
+          <li><i class="fas fa-check"></i> Full metadata, category and blurb overhaul</li>
+          <li><i class="fas fa-check"></i> Weekly Friday performance audits covering spend, clicks, sales and returns</li>
+          <li><i class="fas fa-check"></i> End of campaign strategic roadmap for sustained organic sales</li>
+        </ul>
+        <a href="#inquiry"><button class="pk-cta"><i class="fas fa-envelope"></i> Inquire Via Email</button></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" id="process">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">Our Workflow</div>
+      <h2 class="sec-title">Complete Email First <span class="gold-txt">Accountability</span></h2>
+      <p class="sec-sub">We do not conduct phone calls. Every promise, deliverable, metric and deadline is documented in writing. Here is exactly how every project flows from first contact to final report.</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item sr"><div class="tl-dot">01</div><div class="tl-body"><h4>Email Inquiry</h4><p>You submit your book details, genre, goals and preferred package through our secure website form. Every piece of information is captured in writing from day one and delivered straight to our inbox.</p></div></div>
+      <div class="tl-item sr"><div class="tl-dot">02</div><div class="tl-body"><h4>Formal Email Proposal</h4><p>We respond within 24 to 48 business hours with a custom PDF proposal outlining scope, deliverables, timeline and investment. You hold a complete written record of exactly what you are receiving.</p></div></div>
+      <div class="tl-item sr"><div class="tl-dot">03</div><div class="tl-body"><h4>Signed Agreement And Invoice</h4><p>Clear terms are confirmed and signed through email. We issue a formal agreement alongside an itemized digital invoice. Everything remains documented and traceable.</p></div></div>
+      <div class="tl-item sr"><div class="tl-dot">04</div><div class="tl-body"><h4>Weekly Friday Reports</h4><p>Every Friday you receive a comprehensive progress PDF detailing advertising spend, impressions, clicks, ARC reader distributions, review counts and current Amazon rankings.</p></div></div>
+      <div class="tl-item sr"><div class="tl-dot">05</div><div class="tl-body"><h4>Final Campaign Report</h4><p>When the campaign concludes, you receive a detailed results report with raw metrics, screenshots, verified links and strategic recommendations for sustaining momentum going forward.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY -->
+<section class="sec sec-alt" id="inquiry">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">Get Started</div>
+      <h2 class="sec-title">Request A <span class="gold-txt">Campaign Proposal</span></h2>
+      <p class="sec-sub">Complete the form below and Tayo Marvellous will personally review your book details and respond within 24 to 48 business hours with a formal written proposal and full timeline.</p>
+    </div>
+    <div class="inq-grid">
+
+      <div class="sr-l">
+        <h3 class="inq-h3">Why Authors <span class="gold-txt">Trust This Process</span></h3>
+        <p class="inq-p">We operate on total transparency. No hidden fees, no vague promises and no wasted hours on unnecessary meetings. Every aspect of your campaign is documented, tracked and reported directly to your email inbox.</p>
+        <div class="trust-list">
+          <div class="trust-li"><div class="trust-li-ico"><i class="fas fa-shield-halved"></i></div><div class="trust-li-tx">Complete written accountability on every campaign</div></div>
+          <div class="trust-li"><div class="trust-li-ico"><i class="fas fa-file-contract"></i></div><div class="trust-li-tx">Formal proposals and agreements delivered by email</div></div>
+          <div class="trust-li"><div class="trust-li-ico"><i class="fas fa-chart-line"></i></div><div class="trust-li-tx">Weekly performance reports every single Friday</div></div>
+          <div class="trust-li"><div class="trust-li-ico"><i class="fas fa-clock"></i></div><div class="trust-li-tx">Guaranteed response within 24 to 48 business hours</div></div>
+          <div class="trust-li"><div class="trust-li-ico"><i class="fas fa-earth-americas"></i></div><div class="trust-li-tx">Global authors served across every time zone</div></div>
+        </div>
+
+        <div class="inq-profile">
+          <img class="smart-img"
+               src="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s400-c"
+               data-fallback="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s60-c"
+               alt="Tayo Marvellous, Book Marketing Specialist" referrerpolicy="no-referrer">
+          <h4>Tayo Marvellous</h4>
+          <div class="role">Specialist Book Marketing Expert</div>
+          <a href="mailto:tayomarvellous18@gmail.com" class="mail-pill"><i class="fas fa-envelope"></i> tayomarvellous18@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="form-card sr-r">
+        <div class="form-owner">
+          <img class="smart-img"
+               src="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s200-c"
+               data-fallback="https://lh3.googleusercontent.com/a/ACg8ocJglh8RT63qEoMyAprUyWfXFGmHmuUNEnVLcAGDG0jZY91PwSo=s60-c"
+               alt="Tayo Marvellous" referrerpolicy="no-referrer">
+          <div class="form-owner-tx"><strong>Tayo Marvellous</strong>Will personally review your submission and reply by email</div>
+        </div>
+        <form class="ajax-form" action="https://formspree.io/f/mgavzkel" method="POST">
+          <input type="hidden" name="_subject" value="New Author Campaign Inquiry">
+          <input type="hidden" name="Form Type" value="Author Campaign Inquiry">
+          <div class="fr">
+            <div class="fg"><label>Author Full Name <span class="req">*</span></label><input type="text" name="Author Name" placeholder="Your full name" required></div>
+            <div class="fg"><label>Pen Name</label><input type="text" name="Pen Name" placeholder="If different"></div>
+          </div>
+          <div class="fg"><label>Contact Email Address <span class="req">*</span></label><input type="email" name="Author Email" placeholder="your@email.com" required></div>
+          <div class="fr">
+            <div class="fg"><label>Book Title <span class="req">*</span></label><input type="text" name="Book Title" placeholder="Title of your book" required></div>
+            <div class="fg"><label>Genre <span class="req">*</span></label><input type="text" name="Genre" placeholder="Romance, Thriller, etc" required></div>
+          </div>
+          <div class="fg">
+            <label>Book Status <span class="req">*</span></label>
+            <select name="Book Status" required>
+              <option value="" disabled selected>Select current status</option>
+              <option value="Manuscript In Editing">Manuscript In Editing</option>
+              <option value="Up For Pre Order">Up For Pre Order</option>
+              <option value="Live On Amazon">Live On Amazon And Currently Published</option>
+              <option value="Backlist Revival">Existing Backlist Title Needing Revival</option>
+            </select>
+          </div>
+          <div class="fg"><label>Amazon Or Retailer Link</label><input type="url" name="Book Link" placeholder="https://amazon.com/your-book"></div>
+          <div class="fg">
+            <label>Campaign Package Of Interest <span class="req">*</span></label>
+            <select name="Package Interest" required>
+              <option value="" disabled selected>Select a package</option>
+              <option value="Package One ARC And Review Accelerator">Package One: ARC And Review Accelerator</option>
+              <option value="Package Two Metadata And Visibility Surge">Package Two: Metadata And Visibility Surge</option>
+              <option value="Package Three Full Bestseller Launch">Package Three: Full Bestseller Launch</option>
+              <option value="Custom Scope">Custom Scope Or Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="fg"><label>Primary Launch Or Sales Goal <span class="req">*</span></label><textarea name="Goals" placeholder="Tell us about your goals, target audience and what success looks like for you" required></textarea></div>
+          <div class="fg"><label>Target Launch Date Or Timeline <span class="req">*</span></label><input type="text" name="Timeline" placeholder="March 2026, or as soon as possible" required></div>
+          <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Campaign Inquiry</button>
+          <div class="form-msg"></div>
+          <div class="form-direct">You may also email directly at <a href="mailto:tayomarvellous18@gmail.com">tayomarvellous18@gmail.com</a></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BANNER -->
+<section class="contact-banner">
+  <div class="container">
+    <div class="cb-inner">
+      <div class="cb-left sr-l">
+        <h3>Ready To Give Your Book <span class="gold-txt">The Audience It Deserves?</span></h3>
+        <p>Every inquiry is answered personally with a written proposal. No calls, no pressure, just clear documented strategy delivered to your inbox.</p>
+        <a href="mailto:tayomarvellous18@gmail.com" class="cb-mail-big"><i class="fas fa-envelope-open-text"></i> tayomarvellous18@gmail.com</a>
+      </div>
+      <div class="sr-r"><a href="#inquiry" class="btn-gold"><i class="fas fa-rocket"></i> Start Your Campaign</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="container">
+    <div class="sec-head sr">
+      <div class="sec-tag">Questions</div>
+      <h2 class="sec-title">Frequently Asked <span class="gold-txt">Questions</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq sr" onclick="toggleFaq(this)"><div class="faq-q"><h4>Why is everything handled by email instead of phone calls?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Email creates an indisputable written record for both parties. It guarantees every promise, deliverable, metric and deadline is documented. It also allows us to deliver thorough data heavy reports with screenshots, spreadsheets and verified links that simply cannot be communicated effectively over a call.</p></div></div>
+      <div class="faq sr d1" onclick="toggleFaq(this)"><div class="faq-q"><h4>How do payments work without an instant buy button?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Once you review and accept the written proposal through email, we issue a formal agreement alongside an itemized digital invoice. You receive an official receipt and project schedule before any work begins.</p></div></div>
+      <div class="faq sr" onclick="toggleFaq(this)"><div class="faq-q"><h4>Are your review campaigns compliant with Amazon terms of service?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Completely compliant. We provide readers with free Advance Reader Copies for voluntary honest consideration. We never pay readers for reviews, never require positive reviews and never engage in incentivized review schemes of any kind.</p></div></div>
+      <div class="faq sr d1" onclick="toggleFaq(this)"><div class="faq-q"><h4>How often will I receive updates on my campaign?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Every Friday by 5:00 PM Eastern Time you receive a comprehensive weekly progress PDF detailing advertising spend, impressions, clicks, ARC reader distributions, review counts and current Amazon rankings.</p></div></div>
+      <div class="faq sr" onclick="toggleFaq(this)"><div class="faq-q"><h4>Is the Reader Club genuinely free for readers?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Yes. You will never be asked to pay anything. In exchange for free digital advance copies of upcoming books, we simply ask that you leave an honest review on Amazon or Goodreads once you finish reading.</p></div></div>
+      <div class="faq sr d1" onclick="toggleFaq(this)"><div class="faq-q"><h4>How are advance reader copies delivered?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Digital advance copies are sent through secure download links in ePub, PDF or direct to Kindle transfer format, delivered straight to the email address you used when joining the Reader Club.</p></div></div>
+      <div class="faq sr" onclick="toggleFaq(this)"><div class="faq-q"><h4>Do you work with authors outside the United States?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Absolutely. Because our workflow runs entirely through email, we serve authors across every time zone without any scheduling friction. Reports arrive on schedule regardless of where you are located in the world.</p></div></div>
+      <div class="faq sr d1" onclick="toggleFaq(this)"><div class="faq-q"><h4>How quickly will you respond to my inquiry?</h4><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Every campaign inquiry receives a personal written response within 24 to 48 business hours at tayomarvellous18@gmail.com, complete with a formal proposal covering scope, deliverables and timeline.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><div class="f-logo-mark">TM</div><div class="f-logo-txt">Tayo <span>Marvellous</span></div></div>
+        <p class="f-desc">Specialist book marketing and reader distribution. Dedicated to measurable results and complete written accountability for every author we serve worldwide.</p>
+        <a href="mailto:tayomarvellous18@gmail.com" class="f-mail"><i class="fas fa-envelope"></i> tayomarvellous18@gmail.com</a>
+        <div class="f-note"><i class="fas fa-clock"></i> All inquiries answered within 24 to 48 business hours</div>
+        <div class="f-note"><i class="fas fa-file-shield"></i> Every project documented in writing</div>
+      </div>
+      <div class="f-col">
+        <h4>For Authors</h4>
+        <ul>
+          <li><a href="#authors"><i class="fas fa-angle-right"></i> Authors We Worked With</a></li>
+          <li><a href="#packages"><i class="fas fa-angle-right"></i> Marketing Packages</a></li>
+          <li><a href="#process"><i class="fas fa-angle-right"></i> Email Workflow</a></li>
+          <li><a href="#inquiry"><i class="fas fa-angle-right"></i> Submit Your Book</a></li>
+          <li><a href="#faq"><i class="fas fa-angle-right"></i> Author FAQ</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>For Readers</h4>
+        <ul>
+          <li><a href="#readers"><i class="fas fa-angle-right"></i> Join ARC Review Team</a></li>
+          <li><a href="#readers"><i class="fas fa-angle-right"></i> Book Giveaways</a></li>
+          <li><a href="#authors"><i class="fas fa-angle-right"></i> Featured Authors</a></li>
+          <li><a href="#faq"><i class="fas fa-angle-right"></i> Reader FAQ</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Featured Authors</h4>
+        <ul class="f-authors">
+          <li><div class="f-author-line">
+            <strong>Elizabeth Strout</strong>
+            <a href="mailto:infoelizabethstrout.author@gmail.com">infoelizabethstrout.author@gmail.com</a>
+            <a class="f-amz" href="https://www.amazon.com/stores/Elizabeth-Strout/author/B001IXSAFK" target="_blank" rel="noopener noreferrer"><i class="fab fa-amazon"></i> Amazon Store</a>
+          </div></li>
+          <li><div class="f-author-line">
+            <strong>Taylor Jenkins Reid</strong>
+            <a href="mailto:taylorjenkinsreid10@gmail.com">taylorjenkinsreid10@gmail.com</a>
+            <a class="f-amz" href="https://www.amazon.com/stores/Taylor-Jenkins-Reid/author/B00DX8B85M" target="_blank" rel="noopener noreferrer"><i class="fab fa-amazon"></i> Amazon Store</a>
+          </div></li>
+          <li><div class="f-author-line">
+            <strong>Ann Patchett</strong>
+            <a href="mailto:authorannpatchett.books@gmail.com">authorannpatchett.books@gmail.com</a>
+            <a class="f-amz" href="https://www.amazon.com/stores/Ann-Patchett/author/B000AQ6QAW" target="_blank" rel="noopener noreferrer"><i class="fab fa-amazon"></i> Amazon Store</a>
+          </div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>Copyright 2026 Tayo Marvellous. All Rights Reserved.</p>
+      <div class="f-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms Of Service</a>
+        <a href="#">Amazon Compliance</a>
+        <a href="mailto:tayomarvellous18@gmail.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="mailto:tayomarvellous18@gmail.com" class="float-mail" id="floatMail"><i class="fas fa-envelope"></i> <span>Email Tayo</span></a>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+/* ---------- SMART IMAGE FALLBACK ---------- */
+document.querySelectorAll('.smart-img').forEach(function(img){
+  img.addEventListener('error', function handle(){
+    var fb = img.getAttribute('data-fallback');
+    if (fb && img.src !== fb) { img.src = fb; }
+    else {
+      img.removeEventListener('error', handle);
+      img.style.background='linear-gradient(145deg,#1d1d23,#121216)';
+      img.style.objectFit='contain'; img.style.padding='10px';
+    }
+  });
+  if (img.complete && img.naturalWidth === 0) { img.dispatchEvent(new Event('error')); }
+});
+
+/* ---------- PRELOADER ---------- */
+window.addEventListener('load', function(){
+  setTimeout(function(){ document.getElementById('preloader').classList.add('hidden'); reveal(); }, 2000);
+});
+setTimeout(function(){ document.getElementById('preloader').classList.add('hidden'); reveal(); }, 5000);
+
+/* ---------- PARTICLES ---------- */
+(function(){
+  var box=document.getElementById('particles');
+  for(var i=0;i<26;i++){
+    var p=document.createElement('div'); p.className='particle';
+    var s=(2+Math.random()*3).toFixed(1);
+    p.style.width=s+'px'; p.style.height=s+'px';
+    p.style.left=(Math.random()*100).toFixed(2)+'%';
+    p.style.animationDelay=(Math.random()*12).toFixed(2)+'s';
+    p.style.animationDuration=(9+Math.random()*9).toFixed(2)+'s';
+    box.appendChild(p);
+  }
+})();
+
+/* ---------- SCROLL ---------- */
+var navbar=document.getElementById('navbar'),topbar=document.getElementById('topbar'),
+    progress=document.getElementById('scroll-progress'),toTop=document.getElementById('toTop'),
+    floatMail=document.getElementById('floatMail');
+function onScroll(){
+  var y=window.scrollY||window.pageYOffset;
+  if(y>60){navbar.classList.add('scrolled');topbar.style.transform='translateY(-100%)';topbar.style.opacity='0';}
+  else{navbar.classList.remove('scrolled');topbar.style.transform='translateY(0)';topbar.style.opacity='1';}
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  progress.style.width=(h>0?(y/h)*100:0)+'%';
+  if(y>520){toTop.classList.add('show');floatMail.classList.add('show');}
+  else{toTop.classList.remove('show');floatMail.classList.remove('show');}
+  reveal(); counters();
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+/* ---------- MOBILE MENU ---------- */
+var burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+burger.addEventListener('click',function(){
+  burger.classList.toggle('on'); navLinks.classList.toggle('on');
+  document.body.style.overflow = navLinks.classList.contains('on') ? 'hidden' : '';
+});
+navLinks.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click',function(){
+    burger.classList.remove('on'); navLinks.classList.remove('on'); document.body.style.overflow='';
+  });
+});
+
+/* ---------- REVEAL ---------- */
+function reveal(){
+  var wh=window.innerHeight;
+  document.querySelectorAll('.sr,.sr-l,.sr-r').forEach(function(el){
+    if(el.getBoundingClientRect().top < wh-90) el.classList.add('in');
+  });
+}
+window.addEventListener('resize',reveal);
+reveal();
+
+/* ---------- COUNTERS ---------- */
+var counterDone=false;
+function counters(){
+  if(counterDone) return;
+  var list=document.querySelectorAll('.metric-num');
+  if(!list.length) return;
+  if(list[0].getBoundingClientRect().top > window.innerHeight-80) return;
+  counterDone=true;
+  list.forEach(function(el){
+    var target=parseInt(el.getAttribute('data-target'),10);
+    var suffix=el.getAttribute('data-suffix')||'';
+    var dur=2100,start=null;
+    function step(ts){
+      if(!start) start=ts;
+      var prog=Math.min((ts-start)/dur,1);
+      var eased=1-Math.pow(1-prog,3);
+      var val=Math.floor(eased*target);
+      el.textContent=(target>=1000?val.toLocaleString():val)+suffix;
+      if(prog<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+/* ---------- FAQ ---------- */
+function toggleFaq(el){
+  var open=el.classList.contains('on');
+  document.querySelectorAll('.faq').forEach(function(f){f.classList.remove('on');});
+  if(!open) el.classList.add('on');
+}
+
+/* ---------- SMOOTH SCROLL ---------- */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=this.getAttribute('href');
+    if(id==='#'||id.length<2) return;
+    var t=document.querySelector(id);
+    if(!t) return;
+    e.preventDefault();
+    window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-88,behavior:'smooth'});
+  });
+});
+
+/* ---------- FORMSPREE AJAX ---------- */
+document.querySelectorAll('.ajax-form').forEach(function(form){
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var btn=form.querySelector('.submit-btn'), msg=form.querySelector('.form-msg'), original=btn.innerHTML;
+    btn.disabled=true; btn.innerHTML='<i class="fas fa-circle-notch fa-spin"></i> Sending...';
+    msg.className='form-msg'; msg.textContent='';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(function(res){
+      if(res.ok){
+        form.reset();
+        msg.className='form-msg ok';
+        msg.innerHTML='<i class="fas fa-circle-check"></i> Submission received successfully. Tayo Marvellous will respond to your email within 24 to 48 business hours.';
+        btn.innerHTML='<i class="fas fa-check"></i> Sent Successfully';
+        setTimeout(function(){btn.innerHTML=original;btn.disabled=false;},4200);
+      } else { throw new Error('fail'); }
+    })
+    .catch(function(){
+      msg.className='form-msg err';
+      msg.innerHTML='<i class="fas fa-triangle-exclamation"></i> Something went wrong. Please email directly at tayomarvellous18@gmail.com';
+      btn.innerHTML=original; btn.disabled=false;
+    });
+  });
+});
+</script>
+
+</body>
+</html>
